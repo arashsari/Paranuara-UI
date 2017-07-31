@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h3>{{action}} Employee Detail</h3>
+
+<form method="POST" enctype="multipart/form-data">
+  		{% for prop in employee %}
+            <div class="form-group">
+            <label>{{prop}}</label>
+            <input type="text" value="{{employee[prop]}}" class="form-control"/>
+          </div>
+		{% endfor %}
+
+</form>
+
+
+{% endblock %}
+
+
+ {
+    "_id": "595eeb9c2712390b34e3cc39",
+    "index": 538,
+    "guid": "7b423cce-78c5-4ba8-a549-160b6a3090e2",
+    "has_died": false,
+    "balance": "$1,099.73",
+    "picture": "http://placehold.it/32x32",
+    "age": 52,
+    "eyeColor": "blue",
+    "name": "Avis Carter",
+    "gender": "female",
+    "company_id": 99,
+    "email": "aviscarter@earthmark.com",
+    "phone": "+1 (902) 539-2179",
+    "address": "331 Leonora Court, Tivoli, Kentucky, 8137",
+    "about": "Pariatur laborum eu mollit cillum ex mollit elit mollit cillum ea occaecat aute. Minim non laboris voluptate reprehenderit. Eiusmod amet quis voluptate ea pariatur exercitation nostrud sunt occaecat proident laborum.\r\n",
+    "registered": "2014-01-22T10:42:53 -11:00",
+    "tags": [
+      "voluptate",
+      "nostrud",
+      "sint",
+      "laborum",
+      "sit",
+      "excepteur",
+      "ullamco"
+    ],
+    "friends": [
+      {
+        "index": 0
+      },
+      {
+        "index": 1
+      },
+      {
+        "index": 2
+      },
+      {
+        "index": 3
+      },
+      {
+        "index": 4
+      },
+      {
+        "index": 5
+      },
+      {
+        "index": 6
+      },
+      {
+        "index": 7
+      },
+      {
+        "index": 8
+      },
+      {
+        "index": 9
+      },
+      {
+        "index": 10
+      },
+      {
+        "index": 11
+      },
+      {
+        "index": 12
+      }
+    ],
+    "greeting": "Hello, Avis Carter! You have 1 unread messages.",
+    "favouriteFood": [
+      "orange",
+      "beetroot",
+      "carrot",
+      "strawberry"
+    ]
+  },
