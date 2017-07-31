@@ -1,7 +1,6 @@
 # CRUD for upload, add, update and delete contacts into datstore data model
 
-from flask import Blueprint, current_app, redirect, render_template, request, \
-    session, url_for, flash
+from flask import Blueprint,  render_template, request
 from werkzeug.exceptions import BadRequest
 import json
 import os
@@ -111,7 +110,7 @@ def faviourite_food_list(name):
     employees = [employee for employee in get_data('people') if employee['name'] == name]
     _favourite_food = employees[0]["favouriteFood"]
     for food in _favourite_food:
-        if food in []:
+        if food in ["beetroot", "lettuce", "cucumber", "carrot", "celery"]:
             vegetables.append((food))
         else:
             fruits.append(food)
@@ -143,7 +142,7 @@ def mutual_friends(name1, name2):
     _mutual_friens = find_mutual_friens(name1, name2)
 
     return render_template(
-        "employee_details.html",
+        "friends.html",
         _mutual_friens=_mutual_friens[0],
         next_page_token=0,
         message= _mutual_friens[1],
@@ -153,6 +152,7 @@ def mutual_friends(name1, name2):
 def find_mutual_friens(name1, name2):
     message = None
     category = None
+    _mutual_friens={}
     _employees = get_data('people')
     if name1 and name2:
         employees1 = [employee for employee in _employees if employee['name'] == name1]

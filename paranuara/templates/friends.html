@@ -1,13 +1,13 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h3>{{action}} Employee Detail</h3>
+<h3>Mutual Friends is not implemented properly. </h3>
 
 <form method="POST" enctype="multipart/form-data">
-  		{% for prop in employee %}
+  		{% for prop in _mutual_friens %}
             <div class="form-group">
             <label>{{prop}}</label>
-            <input type="text" value="{{employee[prop]}}" class="form-control"/>
+            <input type="text" value="{{_mutual_friens[prop]}}" class="form-control"/>
           </div>
 		{% endfor %}
 

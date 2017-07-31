@@ -1,7 +1,6 @@
 import logging
 
 from flask import Flask, redirect, session, url_for
-from . import model_tinydb
 
 def create_app(debug=False, testing=False, config_overrides=None):
     print (__name__)
