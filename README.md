@@ -1,4 +1,4 @@
-# Paranuara Challenge
+# Paranuara Challenge With UI
 Paranuara is a class-m planet. Those types of planets can support human life, for that reason the president of the Checktoporov decides to send some people to colonise this new planet and
 reduce the number of people in their own country. After 10 years, the new president wants to know how the new colony is growing, and wants some information about his citizens. Hence he hired you to build a rest API to provide the desired information.
 
@@ -17,7 +17,8 @@ Your API must provides these end points:
 * Python
 * Flask
 
-## [Github link](https://github.com/arashsari/paranuara)
+## [Github link](https://github.com/arashsari/Paranuara-UI)
+###[Github link to design Api with Swagger](https://github.com/arashsari/paranuara)
 
 
 ## Install Dependencies
